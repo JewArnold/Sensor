@@ -28,4 +28,5 @@ public class Sensor {
     private List<Measurement> measurements;
 
 
+
 }

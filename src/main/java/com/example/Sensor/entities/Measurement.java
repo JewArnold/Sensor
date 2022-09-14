@@ -3,6 +3,7 @@ package com.example.Sensor.entities;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Data
@@ -22,10 +23,13 @@ public class Measurement {
     private boolean raining;
 
     @Column(name = "time")
-    private Date time;
+    private LocalDateTime time;
 
+    @Column(name = "sensor_name")
+    private String sensorName;
     @ManyToOne
     @JoinColumn(name = "sensor_id", referencedColumnName = "id")
     private Sensor sensor;
+
 
 }

@@ -17,4 +17,6 @@ public class SensorApplication {
     public ModelMapper modelMapper() {
         return new ModelMapper();
     }
+
+
 }
